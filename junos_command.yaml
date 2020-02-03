@@ -13,8 +13,7 @@
         user: "{{ ADMUSER }}"
         passwd: "{{ ADMPASS }}"
         commands: 
-          - "show version"        
-          - "show system uptime"
+          - "show version"   
       register: junos_result
 
     - name: Print response
