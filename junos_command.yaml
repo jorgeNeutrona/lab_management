@@ -9,6 +9,9 @@
   tasks:
     - name: Get software and uptime information
       juniper_junos_command:        
+        host: "{{ junos_host }}"
+        user: "{{ ADMUSER }}"
+        passwd: "{{ ADMPASS }}"
         commands: 
           - "show version"        
           - "show system uptime"
