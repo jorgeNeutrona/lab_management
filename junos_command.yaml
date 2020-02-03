@@ -1,6 +1,6 @@
 ---
 - name: Get device information
-  hosts: Lab_nm2
+  hosts: JUNOS
   roles:
     - Juniper.junos
   connection: local
